@@ -24,7 +24,7 @@ public class GUI extends JFrame{
 	private JMenuItem newGame;
 	private int counter;
 	
-	public GUI() {
+	GUI() {
 		super();
 		pane = getContentPane();
 		pane.setLayout(new GridLayout(3, 3));
@@ -82,7 +82,7 @@ public class GUI extends JFrame{
 		for(int i = 0; i < 3; i++) {
 			for(int j = 0; j < 3; j++) {
 				JButton button = new JButton();
-				button.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 150));
+				button.setFont(new Font("Ink Free", Font.BOLD, 150));
 				button.setBackground(Color.white);
 				board[i][j] = button;
 				button.addActionListener(new ActionListener() {
